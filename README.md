@@ -1,2 +1,2 @@
 # site-educacional-sobre-esportes
-Este repositório é sobre um site voltado a educação esportiva.
+Este repositório é voltado para um site sobre educação esportiva.
