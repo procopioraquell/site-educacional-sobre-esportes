@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCR TECH </title> <meta name="description" content="Tudo sobre os xxxxxxx">
+    <link rel="stylesheet" href="style.css">
     <style>
         /* Estilos gerais */
 body {
@@ -60,6 +61,8 @@ footer {
     width: 100%;
 }
 
+
+
     </style>
 </head>
 <body>
@@ -74,13 +77,37 @@ footer {
         </ul>
     </nav>
 
-    <div id="carrousel">
-        <img src="dinossauro.jpg" alt="Imagem de dinossauro">
-    </div>
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
 
-    <div class="botoes">
-        <button onclick="window.location.href='sobre.html'">Sobre</button>
-        <button onclick="window.location.href='contato.html'">Contato</button>
+            <div class="slide s1">
+                <img src="./Slideshow/5.png" alt="Futebol">
+            </div>
+            <div class="slide">
+                <img src="./Slideshow/6.png" alt="Natação">
+            </div>
+            <div class="slide">
+                <img src="./Slideshow/7.png" alt="basquete">
+            </div>
+            <div class="slide">
+                <img src="./Slideshow/8.png" alt="tenis">
+            </div>
+            <div class="slide">
+                <img src="./Slideshow/9.png" alt="volei">
+            </div>
+        </div>
+        <div class="navegation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
+        </div>
     </div>
 
     <footer>
