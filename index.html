@@ -3,39 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCR TECH </title> <meta name="description" content="Tudo sobre os xxxxxxx">
-    <link rel="stylesheet" href="style.css">
-    <style>
+    <title>RCR TECH </title> <meta name="description" content="Tudo sobre o melhor do esporte">
+    
+<style>
         /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 16px;
     margin: 0;
-    padding: 0;
-}
+    padding: 0; 
+    }
 
-nav, footer {
-    background-color: #118fc0;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+/* Cabeçalho e Navegação */
+nav {
+        background-color: #23cb3a;
+        color: white;
+        padding: 10px 0;
+        text-align:center;
+        border-bottom: 2px solid white; /* Borda inferior branca*/
+    }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-}
+    }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+nav ul li{
+        display: inline-block; /*Alinha os itens lado a lado*/
+        margin-right: 20px; /*Distancia entre itens*/ 
+    }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    }
+
+ /* Conteúdo */
+ .container{
+        display: flex; /*Alinha os blocos lado a lado*/
+        width: 100%; 
+        margin: 0 auto; 
+        background-color: #23cb3a;
+    }
+
+.container > div { /* Estilos para as divs dentro do container */
+        flex: 1; /* Divide o espaço disponível*/
+        padding: 10px; /*Espaço interno */
+    }
+
+.cta h1{ /*Titulo Pricipal*/
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400 normal ;
+        color: white;
+        font-size: 70px;
+        text-align: center;
+    }
+    /*Slide de Imagens*/
+.slide video {
+        max-width: 90%; 
+        height: auto; 
+        border-radius: 5%;
+        box-shadow: 0 5px 10px;
+        text-align: center; 
+    }
+        
+    /*Bloco de Conteúdo e Botões*/
+
+.informacoes{
+        display: flex; 
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+.sobre-inicial{
+        padding: 20px;
+        margin: 5px;
+        max-width: 600px; /*Espaço do bloco*/
+        text-align: justify;
+    }
+
+.sobre-inicial h2{
+        font-size: 35px;
+        color: #2e8b57;
+        margin-bottom: 10px; 
+        text-align:center;
+    }
+
+.sobre-inicial p {
+        font-size: 20px; 
+        line-height: 1.6; /* Altura da linha */
+        align-items: center;
+    }
+
+
+.informacoes-botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /*centraliza*/
+     
+    }
+
+.informacoes-botoes h3 {
+        font-size: 30px;
+        color: #2e8b57;
+        margin-bottom: 10px;
+    }
+
+    /* Botões */
+.botao {
+        background-color: #23cb3a;
+        color: white;
+        padding: 20px 40px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+        width: 300px; /* Alinhamento do tamanho das laterais*/
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
 }
 
-/* Estilos específicos por página */
+.botao:hover {
+                background-color: yellow ;
+                color: black;
+    }
+
+.contato{
+    margin: 0 auto; 
+    padding: 30px;
+    background-color: #23cb3a;
+    text-align: center;
+    border-bottom: 2px solid white; /* Borda inferior branca*/
+}
+
+/* ESTILO CARROSEL
+
 .hero {
     background-image: htt;
     background-size: cover;
@@ -53,12 +156,14 @@ nav ul li a {
 
 .contact {
     padding: 20px;
-}
+}  */
 
+/* Rodapé */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding:15px 0 ;
+    text-align: center;
+    background-color:#23cb3a;
+    color: white;
 }
 
 
@@ -68,55 +173,99 @@ footer {
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="futebol.html">Futebol</a></li>
-            <li><a href="basquete.html">Basquete</a></li>
-            <li><a href="tenis.html">Tênis</a></li>
-            <li><a href="natacao.html">Natação</a></li>
-            <li><a href="volei.html">Vôlei</a></li>
+            <li><a href="index.html">INÍCIO </a></li>
+            <li> <a href="#sobre"> SOBRE </a> </li>
+            <li> <a href="#contato"> CONTATO </a> </li>
         </ul>
     </nav>
 
-    <div class="content">
+
+    <!-- CARROSEL CINTIA -->
+ <!---  <div class="carousel">
         <div class="slides">
-            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
             <input type="radio" name="slide" id="slide3">
             <input type="radio" name="slide" id="slide4">
             <input type="radio" name="slide" id="slide5">
-
-            <div class="slide s1">
+    
+            <div class="slide" id="s1">
                 <img src="./Slideshow/5.png" alt="Futebol">
             </div>
             <div class="slide">
                 <img src="./Slideshow/6.png" alt="Natação">
             </div>
             <div class="slide">
-                <img src="./Slideshow/7.png" alt="basquete">
+                <img src="./Slideshow/7.png" alt="Basquete">
             </div>
             <div class="slide">
-                <img src="./Slideshow/8.png" alt="tenis">
+                <img src="./Slideshow/8.png" alt="Tênis">
             </div>
             <div class="slide">
-                <img src="./Slideshow/9.png" alt="volei">
+                <img src="./Slideshow/9.png" alt="Vôlei">
             </div>
         </div>
-        <div class="navegation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
+        <div class="navigation">
+            <label for="slide1" class="bar"></label>
+            <label for="slide2" class="bar"></label>
+            <label for="slide3" class="bar"></label>
+            <label for="slide4" class="bar"></label>
+            <label for="slide5" class="bar"></label>
+        </div>
+    </div>  --> 
+
+
+    <div class="container">
+        <div class="cta">
+            <h1> Bem-vindo ao mundo dos esportes</h1>
+        </div>
+        <div class="slide">
+            <video id="meuVideo" autoplay muted loop>
+                <source src="midia/slideprincipal.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; xxxxx Todos os direitos reservados.</p>
-    </footer>
+<main>
+    <div class="informacoes">
+        <section id = sobre class="sobre-inicial">
+            <h2>O que você vai encontrar por aqui?</h2>
+                <p> Aqui, você encontra o melhor da educação esportiva, promovendo o uso e a aprendizagem de forma livre. Nosso objetivo é incentivar o conhecimento sobre diversas modalidades esportivas, desenvolver competências socioemocionais e fortalecer a cultura para todas as idades. Para isso, oferecemos conteúdos atualizados, gratuitos e acessíveis a todos. Acreditamos que o esporte é fundamental para a formação de indivíduos saudáveis, disciplinados, com foco para alcançar seus objetivos e preparados para enfrentar os desafios da vida. Junte-se a nós e faça parte dessa comunidade vibrante!</p>
+        </section>
 
-    <script>
+    
+        <div class="informacoes-botoes"> 
+            <h3>Escolha uma modalidade </h3> <br>
+                <section class="botoes">
+                    <a href="futebol.html"> 
+                        <button class="botao"> FUTEBOL</button></a> <br>
+                    <a href="basquete.html">
+                        <button class="botao">BASQUETE</button> </a> <br>
+                    <a href="tenis.html"> 
+                        <button class="botao"> TENIS </button> </a> <br>
+                    <a href="volei.html"> 
+                        <button class="botao"> VOLEI </button></a> <br>
+                    <a href="natacao.html"> 
+                        <button class="botao"> NATAÇÃO </button></a> 
+                </section>
+        </div>
+    </div>
+
+    <div class="contato"> 
+        <section id = contato>
+            <h2> CONTATO </h2> <br>
+            <em> Em construção...</em>
+        </section>
+    </div>
+</main>
+
+<footer>
+    ??
+</footer>
+
+<script>
 
         
-    </script>
+</script>
 </body>
 </html>
