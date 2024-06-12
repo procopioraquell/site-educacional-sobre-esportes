@@ -6,7 +6,9 @@
     <title>RCR TECH </title> <meta name="description" content="Tudo sobre o melhor do esporte">
     
 <style>
-        /* Estilos gerais */
+        
+        
+/* Estilos gerais */
 body {
     font-family:Arial, Helvetica, sans-serif; 
     font-size: 16px;
@@ -15,32 +17,49 @@ body {
     }
 
 /* Cabeçalho e Navegação */
-nav {
-        background-color: #23cb3a;
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #23cb3a;
+    border-bottom: 2px solid white; /* Borda inferior branca*/
+    font-family: "Bebas Neue", sans-serif;
+    }
+
+    .nav_img img {
+        height: 50px; /* Ajuste a altura da imagem conforme necessário */
+    }
+
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content:center; 
+        }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
         color: white;
-        padding: 10px 0;
-        text-align:center;
-        border-bottom: 2px solid white; /* Borda inferior branca*/
+        text-decoration: none;
+        font-size: 16px;
     }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+    nav ul li a:hover {
+        text-decoration: underline;
+      
     }
 
-nav ul li{
-        display: inline-block; /*Alinha os itens lado a lado*/
-        margin-right: 20px; /*Distancia entre itens*/ 
-    }
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    }
-
-.nav_img{
-    justify-content: left;
-}
  /* Conteúdo */
  .container{
         display: flex; /*Alinha os blocos lado a lado*/
@@ -51,17 +70,19 @@ nav ul li a {
 
 .container > div { /* Estilos para as divs dentro do container */
         flex: 1; /* Divide o espaço disponível*/
-        padding: 10px; /*Espaço interno */
+        padding: 10px; 
     }
 
-.cta h1{ /*Titulo Pricipal*/
+/*Titulo Pricipal*/
+.cta h1{ 
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400 normal ;
         color: white;
         font-size: 70px;
         text-align: center;
     }
-    /*Slide de Imagens*/
+
+/*Slide de Imagens*/
 .slide video {
         max-width: 90%; 
         height: auto; 
@@ -70,7 +91,7 @@ nav ul li a {
         text-align: center; 
     }
         
-    /*Bloco de Conteúdo e Botões*/
+ /*Bloco de Conteúdo e Botões*/
 
 .informacoes{
         display: flex; 
@@ -113,7 +134,7 @@ nav ul li a {
         margin-bottom: 10px;
     }
 
-    /* Botões */
+/* Botões */
 .botao {
         background-color: #23cb3a;
         color: white;
@@ -265,9 +286,10 @@ footer {
 </head>
 <body>
 
-<div class="nav_img">
-    <img src="midia/logo.png">
-</div>
+    <div class = "navegacao">
+        <div class="nav_img">
+            <img src="midia/logo.png">
+        </div>
 
     <nav>
         <ul>
@@ -276,7 +298,11 @@ footer {
             <li> <a href="#contato"> CONTATO </a> </li>
         </ul>
     </nav>
+    
+    </div>
 
+
+    
 
     <!-- CARROSEL CINTIA -->
  <!---  <div class="carousel">
