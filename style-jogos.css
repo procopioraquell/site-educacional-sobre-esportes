@@ -34,12 +34,6 @@ nav ul li a {
     color: black; 
 }
 
-/* Estilos para o link da página atual */
-#atual {
-    font-weight: bolder; 
-    color: yellow;
-}
-
 /* Estilos para o cabeçalho */
 h1 {
     text-align: center; 
