@@ -35,7 +35,7 @@ body {
     nav {
         flex: 1;
         display: flex;
-        justify-content:center; 
+        justify-content: center; 
         }
 
     nav ul {
@@ -66,6 +66,8 @@ body {
         width: 100%; 
         margin: 0 auto; 
         background-color: #23cb3a;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 .container > div { /* Estilos para as divs dentro do container */
@@ -84,11 +86,13 @@ body {
 
 /*Slide de Imagens*/
 .slide video {
-        max-width: 90%; 
+        max-width: 100%; 
         height: auto; 
         border-radius: 5%;
         box-shadow: 0 5px 10px;
-        text-align: center; 
+        display: block;
+        margin: 0 auto;
+        
     }
         
  /*Bloco de Conteúdo e Botões*/
@@ -97,6 +101,7 @@ body {
         display: flex; 
         width: 100%;
         margin: 0 auto; 
+        background-color: white;
     }
 
 .sobre-inicial{
@@ -104,6 +109,7 @@ body {
         margin: 5px;
         max-width: 600px; /*Espaço do bloco*/
         text-align: justify;
+       
     }
 
 .sobre-inicial h2{
@@ -116,7 +122,7 @@ body {
 .sobre-inicial p {
         font-size: 20px; 
         line-height: 1.6; /* Altura da linha */
-        align-items: center;
+        
     }
 
 
@@ -135,7 +141,7 @@ body {
     }
 
 /* Botões */
-.botao {
+.botao, .botao_dif {
         background-color: #23cb3a;
         color: white;
         padding: 20px 40px;
@@ -149,21 +155,27 @@ body {
 }
 
 .botao:hover {
-                background-color: yellow ;
-                color: black;
+    background-color: #EDE846 ;
+    color: white;
 }
 
+.botao_dif:hover  {
+    background-color:#058352;
+    color: white;
+}
 
 /*Formulario */ 
 .formulario {
     background-color: #23cb3a;
     display: flex;
     align-items: flex-end;
+
+    
 }   
 
 .form{
-    margin: 50px auto;
-    padding: 50px;
+    margin: 40px ;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;    
@@ -183,47 +195,39 @@ body {
 }
 
 /* Caixas de entrada */
-input{
+input, textarea {
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid white;
     border-radius: 5px;
     font-size: 16px;
     background-color: #23cb3a;
+    color: white;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
  /* Caixa de mensagem */           
 textarea { 
-    width: 300px;
+    width: 400px;
     height: 150px;
-    padding: 15px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
     resize: none; /*Retira a opção de expandir*/
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #23cb3a;
-
 }   
 
 /* Cor da texto em Input*/
-input::placeholder {
-    color: white; 
-}
-textarea::placeholder {
-    color: white; 
+
+input::placeholder, textarea::placeholder {
+    color: white;
 }
 
 /* Cor de fundo input quando selecionado */
-input:focus {
+input:focus, textarea:focus {
     background-color: #2e8b57; 
     color: white;
-        }
-textarea:focus {
-    background-color:#2e8b57;; 
-    color: white;
 }
+
+
 
 .form_button{
     background-color: white;
@@ -238,9 +242,7 @@ textarea:focus {
 
 .form-img{
     height: 500px;
-    position: relative;
-    width: 500px 
-
+    width: 500px;
 }
 /* ESTILO CARROSEL
 
@@ -265,7 +267,7 @@ textarea:focus {
 
 /* Rodapé */
 footer {
-    padding:15px 0 ;
+    padding: 15px 0;
     text-align: center;
     background-color:#23cb3a;
     color: white;
@@ -274,10 +276,57 @@ footer {
 
 footer {
     background-color: #f8f8f8;
-    padding: 20px 0;
+    padding: 3px ;
     text-align: center;
+    color: #23cb3a;
 }
 
+
+/* DIFERENTES TAMANHOS DE TELA*/
+@media (max-width: 768px) {
+    .container, .informacoes {
+        flex-direction: column;
+    }
+
+    .nav_img img, .form-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cta h1 {
+        font-size: 40px;
+    }
+
+    .sobre-inicial, .informacoes-botoes {
+        max-width: 100%;
+    }
+
+    botao, .botao_dif {
+        width: 100%;
+    }
+    }
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .nav_img img {
+        height: 40px;
+    }
+
+    .cta h1 {
+        font-size: 30px;
+    }
+
+    .sobre-inicial h2 {
+        font-size: 25px;
+    }
+
+    .informacoes-botoes h3 {
+        font-size: 20px;
+    }
+    }
 
 
 </style>
@@ -345,7 +394,7 @@ footer {
         </div>
         <div class="slide">
             <video id="meuVideo" autoplay muted loop>
-                <source src="midia/slideprincipal.mp4" type="video/mp4">
+                <source src="midia/slideprincipal.mp4" type="video/mp4" alt="slide com foto demostrativa dos esportes">
             </video>
         </div>
     </div>
@@ -364,11 +413,11 @@ footer {
                     <a href="futebol.html"> 
                         <button class="botao"> FUTEBOL</button></a> <br>
                     <a href="basquete.html">
-                        <button class="botao">BASQUETE</button> </a> <br>
+                        <button class="botao_dif">BASQUETE</button> </a> <br>
                     <a href="tenis.html"> 
                         <button class="botao"> TENIS </button> </a> <br>
                     <a href="volei.html"> 
-                        <button class="botao"> VOLEI </button></a> <br>
+                        <button class="botao_dif"> VOLEI </button></a> <br>
                     <a href="natacao.html"> 
                         <button class="botao"> NATAÇÃO </button></a> 
                 </section>
@@ -393,12 +442,12 @@ footer {
                 <button class="form_button">Enviar</button>
             </form>
         </div>
-        <img class="form-img" src="midia/contato.png">
+        <img class="form-img" src="midia/contato.png" alt="boneco falando ao celular">
     </div>
 </main>
 
 <footer>
-    ??
+    <h6> © 2024 RCR TECH. Todos os direitos reservados.</h6>
 </footer>
 
 <script>
