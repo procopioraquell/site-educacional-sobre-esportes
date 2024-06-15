@@ -3,178 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCR TECH </title> <meta name="description" content="Tudo sobre o melhor do esporte">
-    
+    <title>RCR TECH</title>
+    <meta name="description" content="Tudo sobre o melhor do esporte">
+    <link rel="stylesheet" href="vit_style.css">
+    <script src="script.js" defer></script>
 <style>
-        
-        
 /* Estilos gerais */
 body {
-    font-family:Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
     font-size: 16px;
     margin: 0;
     padding: 0; 
-    }
+}
 
 /* Cabeçalho e Navegação */
-
 .navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #23cb3a;
-    border-bottom: 2px solid white; /* Borda inferior branca*/
+    border-bottom: 2px solid white; /* Borda inferior branca */
     font-family: "Bebas Neue", sans-serif;
-    }
+}
 
-    .nav_img img {
-        height: 50px; /* Ajuste a altura da imagem conforme necessário */
-    }
+.nav_img img {
+    height: 50px; /* Ajuste a altura da imagem conforme necessário */
+}
 
-    nav {
-        flex: 1;
-        display: flex;
-        justify-content: center; 
-        }
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+}
 
-    nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    nav ul li {
-        margin: 0 20px;
-    }
+nav ul li {
+    margin: 0 20px;
+}
 
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-    nav ul li a:hover {
-        text-decoration: underline;
-      
-    }
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
- /* Conteúdo */
- .container{
-        display: flex; /*Alinha os blocos lado a lado*/
-        width: 100%; 
-        margin: 0 auto; 
-        background-color: #23cb3a;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+/* Conteúdo */
+.container {
+    display: flex; /* Alinha os blocos lado a lado */
+    width: 100%; 
+    margin: 0 auto; 
+    background-color: #23cb3a;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .container > div { /* Estilos para as divs dentro do container */
-        flex: 1; /* Divide o espaço disponível*/
-        padding: 10px; 
-    }
+    flex: 1; /* Divide o espaço disponível */
+    padding: 10px; 
+}
 
-/*Titulo Pricipal*/
-.cta h1{ 
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400 normal ;
-        color: white;
-        font-size: 70px;
-        text-align: center;
-    }
+/* Titulo Principal */
+.cta h1 { 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
 
-/*Slide de Imagens*/
-.slide video {
-        max-width: 100%; 
-        height: auto; 
-        border-radius: 5%;
-        box-shadow: 0 5px 10px;
-        display: block;
-        margin: 0 auto;
-        
-    }
-        
- /*Bloco de Conteúdo e Botões*/
+/* Slide de Imagens */
+.slide img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5%;
+    box-shadow: 0 5px 10px;
+    display: block;
+    margin: 0 auto;
+}
 
-.informacoes{
-        display: flex; 
-        width: 100%;
-        margin: 0 auto; 
-        background-color: white;
-    }
+/* Bloco de Conteúdo e Botões */
+.informacoes {
+    display: flex; 
+    width: 100%;
+    margin: 0 auto; 
+    background-color: white;
+}
 
-.sobre-inicial{
-        padding: 20px;
-        margin: 5px;
-        max-width: 600px; /*Espaço do bloco*/
-        text-align: justify;
-       
-    }
+.sobre-inicial {
+    padding: 20px;
+    margin: 5px;
+    max-width: 600px; /* Espaço do bloco */
+    text-align: justify;
+}
 
-.sobre-inicial h2{
-        font-size: 35px;
-        color: #2e8b57;
-        margin-bottom: 10px; 
-        text-align:center;
-    }
+.sobre-inicial h2 {
+    font-size: 35px;
+    color: #2e8b57;
+    margin-bottom: 10px; 
+    text-align: center;
+}
 
 .sobre-inicial p {
-        font-size: 20px; 
-        line-height: 1.6; /* Altura da linha */
-        
-    }
-
+    font-size: 20px; 
+    line-height: 1.6; /* Altura da linha */
+}
 
 .informacoes-botoes {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%; /*centraliza*/
-     
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Centraliza */
+}
 
 .informacoes-botoes h3 {
-        font-size: 30px;
-        color: #2e8b57;
-        margin-bottom: 10px;
-    }
+    font-size: 30px;
+    color: #2e8b57;
+    margin-bottom: 10px;
+}
 
 /* Botões */
 .botao, .botao_dif {
-        background-color: #23cb3a;
-        color: white;
-        padding: 20px 40px;
-        font-size: 20px;
-        border: none;
-        cursor: pointer;
-        margin-bottom: 10px;
-        width: 300px; /* Alinhamento do tamanho das laterais*/
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
+    background-color: #23cb3a;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 300px; /* Alinhamento do tamanho das laterais */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #EDE846 ;
+    background-color: #EDE846;
     color: white;
 }
 
-.botao_dif:hover  {
-    background-color:#058352;
+.botao_dif:hover {
+    background-color: #058352;
     color: white;
 }
 
-/*Formulario */ 
+/* Formulário */
 .formulario {
     background-color: #23cb3a;
     display: flex;
     align-items: flex-end;
+}
 
-    
-}   
-
-.form{
-    margin: 40px ;
+.form {
+    margin: 40px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -182,13 +172,12 @@ body {
     position: relative;
 }
 
-
 .form label {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.form_titulo{
+.form_titulo {
     font-size: 35px;
     color: white;
     padding: 1px;   
@@ -207,16 +196,14 @@ input, textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
- /* Caixa de mensagem */           
+/* Caixa de mensagem */
 textarea { 
     width: 400px;
     height: 150px;
-    resize: none; /*Retira a opção de expandir*/
-}   
+    resize: none; /* Retira a opção de expandir */
+}
 
-/* Cor da texto em Input*/
-
+/* Cor do texto em Input */
 input::placeholder, textarea::placeholder {
     color: white;
 }
@@ -227,9 +214,7 @@ input:focus, textarea:focus {
     color: white;
 }
 
-
-
-.form_button{
+.form_button {
     background-color: white;
     color: #23cb3a;
     padding: 20px 40px;
@@ -240,11 +225,10 @@ input:focus, textarea:focus {
     margin-top: 10px;  
 }
 
-.form-img{
+.form-img {
     height: 500px;
     width: 500px;
 }
-/* ESTILO CARROSEL
 
 .hero {
     background-image: htt;
@@ -263,26 +247,24 @@ input:focus, textarea:focus {
 
 .contact {
     padding: 20px;
-}  */
+}
 
 /* Rodapé */
 footer {
     padding: 15px 0;
     text-align: center;
-    background-color:#23cb3a;
+    background-color: #23cb3a;
     color: white;
 }
 
-
 footer {
     background-color: #f8f8f8;
-    padding: 3px ;
+    padding: 3px;
     text-align: center;
     color: #23cb3a;
 }
 
-
-/* DIFERENTES TAMANHOS DE TELA*/
+/* Diferentes Tamanhos de Tela */
 @media (max-width: 768px) {
     .container, .informacoes {
         flex-direction: column;
@@ -301,10 +283,10 @@ footer {
         max-width: 100%;
     }
 
-    botao, .botao_dif {
+    .botao, .botao_dif {
         width: 100%;
     }
-    }
+}
 
 @media (max-width: 480px) {
     nav ul li {
@@ -326,133 +308,110 @@ footer {
     .informacoes-botoes h3 {
         font-size: 20px;
     }
-    }
-
-
+}
 </style>
-
-
 </head>
 <body>
-
-    <div class = "navegacao">
+    <div class="navegacao">
         <div class="nav_img">
             <img src="midia/logo.png">
         </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">INÍCIO </a></li>
-            <li> <a href="#sobre"> SOBRE </a> </li>
-            <li> <a href="#contato"> CONTATO </a> </li>
-        </ul>
-    </nav>
-    
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
     </div>
-
-
-    
-
-    <!-- CARROSEL CINTIA -->
- <!---  <div class="carousel">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <input type="radio" name="slide" id="slide5">
-    
-            <div class="slide" id="s1">
-                <img src="./Slideshow/5.png" alt="Futebol">
-            </div>
-            <div class="slide">
-                <img src="./Slideshow/6.png" alt="Natação">
-            </div>
-            <div class="slide">
-                <img src="./Slideshow/7.png" alt="Basquete">
-            </div>
-            <div class="slide">
-                <img src="./Slideshow/8.png" alt="Tênis">
-            </div>
-            <div class="slide">
-                <img src="./Slideshow/9.png" alt="Vôlei">
-            </div>
-        </div>
-        <div class="navigation">
-            <label for="slide1" class="bar"></label>
-            <label for="slide2" class="bar"></label>
-            <label for="slide3" class="bar"></label>
-            <label for="slide4" class="bar"></label>
-            <label for="slide5" class="bar"></label>
-        </div>
-    </div>  --> 
-
 
     <div class="container">
         <div class="cta">
-            <h1> Bem-vindo ao mundo dos esportes</h1>
+            <h1>Bem-vindo ao mundo dos esportes</h1>
         </div>
-        <div class="slide">
-            <video id="meuVideo" autoplay muted loop>
-                <source src="midia/slideprincipal.mp4" type="video/mp4" alt="slide com foto demostrativa dos esportes">
-            </video>
-        </div>
+        <div class="carousel">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1">
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+        
+                <div class="slide s1">
+                    <img src="./Slideshow/5.png" alt="Futebol">
+                </div>
+                <div class="slide">
+                    <img src="./Slideshow/6.png" alt="Natação">
+                </div>
+                <div class="slide">
+                    <img src="./Slideshow/7.png" alt="Basquete">
+                </div>
+                <div class="slide">
+                    <img src="./Slideshow/8.png" alt="Tênis">
+                </div>
+                <div class="slide">
+                    <img src="./Slideshow/9.png" alt="Vôlei">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="slide1" class="bar"></label>
+                <label for="slide2" class="bar"></label>
+                <label for="slide3" class="bar"></label>
+                <label for="slide4" class="bar"></label>
+                <label for="slide5" class="bar"></label>
+            </div>
+        </div>  
     </div>
 
-<main>
-    <div class="informacoes">
-        <section id = sobre class="sobre-inicial">
-            <h2>O que você vai encontrar por aqui?</h2>
-                <p> Aqui, você encontra o melhor da educação esportiva, promovendo o uso e a aprendizagem de forma livre. Nosso objetivo é incentivar o conhecimento sobre diversas modalidades esportivas, desenvolver competências socioemocionais e fortalecer a cultura para todas as idades. Para isso, oferecemos conteúdos atualizados, gratuitos e acessíveis a todos. Acreditamos que o esporte é fundamental para a formação de indivíduos saudáveis, disciplinados, com foco para alcançar seus objetivos e preparados para enfrentar os desafios da vida. Junte-se a nós e faça parte dessa comunidade vibrante!</p>
-        </section>
+    <main>
+        <div class="informacoes">
+            <section id="sobre" class="sobre-inicial">
+                <h2>O que você vai encontrar por aqui?</h2>
+                <p>Aqui, você encontra o melhor da educação esportiva, promovendo o uso e a aprendizagem de forma livre. Nosso objetivo é incentivar o conhecimento sobre diversas modalidades esportivas, desenvolver competências socioemocionais e fortalecer a cultura para todas as idades. Para isso, oferecemos conteúdos atualizados, gratuitos e acessíveis a todos. Acreditamos que o esporte é fundamental para a formação de indivíduos saudáveis, disciplinados, com foco para alcançar seus objetivos e preparados para enfrentar os desafios da vida. Junte-se a nós e faça parte dessa comunidade vibrante!</p>
+            </section>
 
-    
-        <div class="informacoes-botoes"> 
-            <h3>Escolha uma modalidade </h3> <br>
+            <div class="informacoes-botoes"> 
+                <h3>Escolha uma modalidade</h3> <br>
                 <section class="botoes">
                     <a href="futebol.html"> 
-                        <button class="botao"> FUTEBOL</button></a> <br>
+                        <button class="botao">FUTEBOL</button></a> <br>
                     <a href="basquete.html">
-                        <button class="botao_dif">BASQUETE</button> </a> <br>
+                        <button class="botao_dif">BASQUETE</button></a> <br>
                     <a href="tenis.html"> 
-                        <button class="botao"> TENIS </button> </a> <br>
+                        <button class="botao">TENIS</button></a> <br>
                     <a href="volei.html"> 
-                        <button class="botao_dif"> VOLEI </button></a> <br>
+                        <button class="botao_dif">VOLEI</button></a> <br>
                     <a href="natacao.html"> 
-                        <button class="botao"> NATAÇÃO </button></a> 
+                        <button class="botao">NATAÇÃO</button></a>
                 </section>
+            </div>
         </div>
-    </div>
 
-    
-   <div class="formulario" id="formulario">
-        <div class="form">
-            <form>
-                <h3 class="form_titulo">CONTATO</h3>
-                <label for="nome"></label>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-                <label for="contato"></label>
-                <input type="tel" id="contato" name="contato" placeholder="Telefone ou WhatsApp"> <br>
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="E-mail">
-                <label for="assunto"></label>
-                <input type="text" id="assunto" name="assunto" placeholder="Assunto"> <br>
-                <label for="mensagem"></label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea><br>
-                <button class="form_button">Enviar</button>
-            </form>
+        <div class="formulario" id="formulario">
+            <div class="form">
+                <form>
+                    <h3 class="form_titulo">CONTATO</h3>
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome">
+                    <label for="contato"></label>
+                    <input type="tel" id="contato" name="contato" placeholder="Telefone ou WhatsApp"> <br>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="E-mail">
+                    <label for="assunto"></label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Assunto"> <br>
+                    <label for="mensagem"></label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea><br>
+                    <button class="form_button">Enviar</button>
+                </form>
+            </div>
+            <img class="form-img" src="midia/contato.png" alt="boneco falando ao celular">
         </div>
-        <img class="form-img" src="midia/contato.png" alt="boneco falando ao celular">
-    </div>
-</main>
+    </main>
 
-<footer>
-    <h6> © 2024 RCR TECH. Todos os direitos reservados.</h6>
-</footer>
+    <footer>
+        <h6>© 2024 RCR TECH. Todos os direitos reservados.</h6>
+    </footer>
 
-<script>
-
-        
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
